@@ -1,0 +1,142 @@
+
+.navbar-nav a{
+    text-decoration: none;
+    display: block;
+    width: 80px;
+    text-align:center;
+    /*font-size: 18px;*/
+    margin: 0 auto;
+    color: #fff;
+}
+
+.navbar-nav li ul{
+    text-decoration: none;
+    display: none;
+    list-style-type: none;
+    line-height: 27px;
+    text-align:left;
+    right: 238px;
+    /*left: 10px;*/
+    /*left:-999em;*/
+    /*width: 180px; */
+    /*不能用relative  会移动*/
+    position: absolute;
+    float: left;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(120deg,#0984e3,#6c5ce7);
+}
+
+.signUp-form{
+    width: 360px;
+    background-color: #F6F6F6;
+    height: 580px;
+    padding: 80px 40px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.signUp-form  h1{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.txtb{
+    border-bottom: 2px solid #adadad;
+    position: relative;
+    margin: 30px 0px;
+
+}
+
+.txtb input{
+    font-size: 15px;
+    color: #333;
+    border: none;
+    width: 100%;
+    outline: none;
+    background: none;
+    padding: 0 5px;
+    height: 40px;
+}
+
+.txtb span::before{
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    z-index: -1;
+    /*top: ;*/
+}
+
+.txtb span::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    top: 100%;
+    background: linear-gradient(120deg,#0984e3,#6c5ce7);
+    left: 0;
+    transition: .5s;
+}
+
+.focus + span::before{
+    top: -5px;
+}
+
+.focus + span::after{
+    width: 100%;
+}
+
+.txtb span + div{
+    position: absolute;
+    color: red;
+    font-size: 12px;
+    /*text-align: center;*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.sigbtn{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: linear-gradient(120deg,#0984e3,#6c5ce7);
+    background-size: 200%;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.sigbtn:hover{
+    background-position: right;
+}
+
+
+
+/*form input{*/
+    /*font-size: 15px;*/
+    /*color: #333;*/
+    /*border: none;*/
+    /*width: 100%;*/
+    /*outline: none;*/
+    /*background: none;*/
+    /*padding: 0 50px;*/
+    /*height: 40px;*/
+/*}*/

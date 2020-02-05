@@ -1,0 +1,9 @@
+#scroll_top{
+    /*display: flex;*/
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 50px;
+    right: 18%;
+    display: none;
+}

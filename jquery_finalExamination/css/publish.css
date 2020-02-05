@@ -1,0 +1,242 @@
+/*.pageContainer{*/
+/*display: flex;*/
+/*flex-direction: column;*/
+/*}*/
+/**{*/
+/*padding: 0;*/
+/*margin: 0;*/
+/*}*/
+
+body{
+    /*background-image: url("../image/banner1.jpg");*/
+    margin: 0;
+}
+
+.pageContainer{
+    /*background-image: url("../image/banner1.jpg");*/
+    /*background-size: cover;*/
+    background-image: linear-gradient(125deg,#5352ed, #ff6348,#70a1ff , #ff4757);
+    background-size: 400%;
+    animation: bganimation 15s infinite;
+}
+
+@keyframes bganimation {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.header{
+    height: 54px;
+}
+
+
+.navbar_nav{
+    width: 300px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.navbar_nav li ul{
+
+    position: absolute;
+    right: 110px;
+}
+
+.navbar_nav li ul a{
+    font-size: 16px;
+}
+
+.topUserHead{
+    position: relative;
+    top: -9px;
+}
+
+
+.topUserHead img{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+.userFunction{
+    /*定位在行内样式*/
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.2);
+}
+
+.userFunction li{
+    width: 100px;
+    position: relative;
+    /*right: -150px;*/
+}
+
+.leftContainer{
+    /*position: fixed;*/
+    /*width: 10%;*/
+    /*height: 100%;*/
+    /*background: blue;*/
+    /*!*border: 1px solid red;*!*/
+    /*left: 20%;*/
+    /*!*top: 50px;*!*/
+    /*padding: 0;*/
+    /*margin: 0;*/
+    /*border: none;*/
+    position: fixed;
+    width: 10%;
+    height: 100%;
+    background-color: rgba(249, 249, 255, 0.1);
+    /*opacity: 0.5;*/
+    /*background-color: ;*/
+    /*background: blue;*/
+    /*border: 1px solid red;*/
+    left: 20%;
+    /*top: 50px;*/
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.leftContainer ul{
+    list-style-type: none;
+}
+
+.leftContainer ul li a{
+    text-decoration: none;
+}
+
+.leftContainer ul li a:link{
+    color: rgb(51, 51, 51);
+}
+
+.leftContainer ul li a:active{
+    color: rgb(51, 51, 51);
+}
+
+.leftContainer ul li a:visited{
+    color: rgb(51, 51, 51);
+}
+
+.centerContainer{
+    /*position: relative;*/
+    /*width: 50%;*/
+    /*background: blue;*/
+    /*min-height: 800px;*/
+    /*!*border: 1px solid red;*!*/
+    /*left: 29.5%;*/
+    /*padding: 0;*/
+    /*margin: 0;*/
+    /*border: none;*/
+    /*display: flex;*/
+    /*!*text-align: center;*!*/
+    /*!*align-items: center;*!*/
+    /*!*justify-content: center;*!*/
+    position: relative;
+    width: 50%;
+    background-color: rgba(249, 249, 255, 0.05);
+    min-height: 800px;
+    /*border: 1px solid red;*/
+    left: 30%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    /*display: flex;*/
+    /*text-align: center;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+}
+
+.publishContainer{
+    display: block;
+    width: 97%;
+    position: relative;
+    border: none;
+    background: white;
+    height: 320px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgba(249, 249, 255, 0.5);
+    border-radius: 5px;
+    /*left: 20px;*/
+}
+
+
+
+.publishContainer span{
+    position: relative;
+    /*margin: 10px;*/
+}
+
+.editorContainer{
+    position: relative;
+    /*top:50px;*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /*width: 90%;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*left: 20px;*/
+    /*border-style: ridge;*/
+}
+
+
+.editor{
+    position: relative;
+    width: 100%;
+    border: none;
+    height: 200px;
+}
+
+
+
+.publishButton{
+    /*float: right;*/
+    position: relative;
+    background-color: rgb(255, 192, 159);
+    width: 70px;
+    height: 32px;
+    /*border: none;*/
+    border: 1px solid rgb(255, 192, 159);
+    border-radius: 4px;
+    right: 1px;
+    /*float: right;*/
+    /*margin-left: 0;*/
+    /*padding-left: 0;*/
+    /*border-top-right-radius: 10%;*/
+    /*border-bottom-right-radius: 10%;*/
+    /*border-top-right-radius: 5px;*/
+    /*border-bottom-right-radius: 5px;*/
+}
+
+.publishContainer select{
+    border: none;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: rgba(249, 249, 255, 0.5);
+    /*float: right;*/
+    /*right: 10%;*/
+}
+
+.bottomFunction{
+    /*display: block;*/
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+
+
+}

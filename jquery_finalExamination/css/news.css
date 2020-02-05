@@ -1,0 +1,513 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    /*display: flex;*/
+    display: block;
+    width:100%;
+    position:fixed;
+    height:50px;
+    /*padding: 0 30px;*/
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 0;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    justify-content: space-between;
+    border-top: 3px solid rgb(250, 125, 60);
+    /*background-color: dodgerblue;*/
+    /*float: right;*/
+    /*background: rgba(28, 35, 39, 0.8);*/
+}
+
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.name{
+    /*font-size: 24px;*/
+    /*font-weight: bold;*/
+    /*top: 10px;*/
+    /*float: left;*/
+    font-size: 24px;
+    font-weight: bold;
+    top: 10px;
+    float: left;
+    /*bottom: -20px;*/
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+
+.searchContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.input{
+    width: 27px;
+    height: 27px;
+    background: none;
+    border-radius: 50%;
+    border: 2px solid #7f8c8d;
+    box-sizing: border-box;
+    outline: none;
+    transition: width 0.4s ease-in-out,
+                border-radius 0.8s ease-in-out,
+                padding 0.2s;
+    /*transition-delay: 0.4s;*/
+}
+
+.inclicked{
+    width: 360px;
+    border-radius: 50px;
+    padding: 0 15px;
+
+}
+
+
+.button{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.button::before{
+    content: "";
+    width: 2px;
+    height: 20px;
+    background: #7f8c8d;
+    position: absolute;
+    transform: rotate(-45deg);
+    bottom: 20px;
+    right: -6px;
+    transition: 0.2s;
+
+}
+
+.close::before, .close::after{
+    content: "";
+    width: 2px;
+    height: 26px;
+    background: #7f8c8d;
+    position: absolute;
+    /*transform: rotate(-45deg);*/
+    bottom: 33px;
+    right: 17px;
+    /*transition-delay: 0.6s;*/
+
+}
+
+.close::before{
+    /*transition-delay: 0.6s;*/
+    /*transform: rotate(-45deg);*/
+}
+
+.close::after{
+    transition-delay: 0.6s;
+    transform: rotate(45deg);
+}
+
+
+
+.navbar_nav {
+    /*display: flex;*/
+    list-style-type: none;
+    /*float: right;*/
+    margin-right: 20px;
+}
+
+.navbar_nav a{
+    text-decoration: none;
+    display: block;
+    width: 80px;
+    text-align:center;
+    font-size: 18px;
+    /*margin: 0 auto;*/
+    /*color: #fff;*/
+}
+
+.navbar_nav li a:hover{
+    background: #99ceff;
+
+}
+
+.navbar_nav>li{
+    /*position: relative;*/
+    float: left;
+}
+
+.navbar_nav li ul{
+    display: none;
+    list-style-type: none;
+    line-height: 27px;
+    text-align:left;
+    right: 180px;
+    /*left: 10px;*/
+    /*left:-999em;*/
+    /*width: 180px; */
+    /*不能用relative  会移动*/
+    position: absolute;
+    float: left;
+}
+
+.navbar-nav li ul li{
+    position: relative;
+    /*float: left;*/
+    left: -100px;
+}
+
+.navbar-nav li ul li a{
+    display: flex;
+    position: absolute;
+    float: left;
+    left: auto;
+    color: rgb(51, 51, 51);
+}
+
+a:link{
+    color: rgb(51, 51, 51);
+}
+
+a:active{
+    color: rgb(51, 51, 51);
+}
+
+a:visited{
+    color: rgb(51, 51, 51);
+}
+
+
+.navbar li:hover ul {
+    left: auto;
+}
+
+.pageContainer{
+    display: flex;
+    position: absolute;
+    /*position: relative;*/
+    width: 100%;
+    top: 55px;
+    /*height: 100%;*/
+    min-width:1360px;
+    background-color: #F6F6F6;
+    /*background-image: url("../image/bg.jpg");*/
+    /*!*background-repeat: no-repeat;*!*/
+    /*background-size: cover;*/
+    /*background-position: bottom center;*/
+}
+
+.leftContent{
+    width: 30%;
+    /*height: 100%;*/
+    float: left;
+    /*border: 1px solid red;*/
+}
+
+.rightContent{
+    width: 30%;
+    /*height: 100%;*/
+    float: right;
+    /*border: 1px solid red;*/
+}
+
+.centerContent{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+    /*min-height: 800px;*/
+    /*background-color: white;*/
+    /*background-color: #F6F6F6;*/
+    /*border: 1px solid red;*/
+}
+
+/*******文章模块************/
+
+
+.centerContent .item{
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-content: space-between;*/
+    /*display: block;*/
+    position: relative;
+    width: 100%;
+    /*width: 100px;*/
+    /*height: 120px;*/
+    height: 150px;
+    overflow: hidden;
+    box-sizing: content-box;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    /*padding-top: 10px;*/
+    border-bottom: 1px solid lightgray;
+    background-color: white;
+    /*border-radius: 5px;*/
+
+    /*加上下面菜单栏进行修改*/
+    display: flex;
+    flex-direction: column;
+
+    /*align-items: center;*/
+    /*justify-content: space-around;*/
+}
+.centerContent .item .tooltip{
+    /*display: flex;*/
+    /*position: absolute;*/
+    position: absolute;/*add*/
+    width: 30%;
+    height: 120px;
+    /*border: 1px solid red;*/
+    /*float: left;*/
+}
+
+.centerContent .item img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.centerContent .item .text_block{
+    /*display: block;*/
+    /*position: relative;*/
+    position: relative;
+    width: 65%;
+    height: 115px;
+    overflow: hidden;
+    /*right: 10px;*/
+    /*margin: 0 auto;*/
+    left: 32%;
+    margin-top: 5px;
+    /*border: 1px solid red;*/
+    top: auto;
+    /*float: right;*/
+}
+
+
+/*.centerContent .item .text_block{*/
+    /*!*display: block;*!*/
+    /*position: relative;*/
+    /*!*position: absolute;*!*/
+    /*width: 50%;*/
+    /*!*float: left;*!*/
+    /*left: 200px;*/
+/*}*/
+
+.centerContent .item .text_block h4{
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.centerContent .item div p{
+    text-indent: 2em;
+}
+
+
+/*评论区*/
+.commentArea{
+    /*display: none;*/
+    /*position: relative;*/
+    position: relative;
+    width: 100%;
+    height: 120px;
+    background: #e9e9e9;
+    margin-top: 0;
+    padding-top: 0;
+    top: -10px;
+    display: none;
+}
+
+.commentArea div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.commentArea .userHead{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+
+}
+
+.commentArea .inputAndButton{
+    width: 90%;
+    display: block;
+    margin-top: 10px;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+}
+
+.commentArea .inputAndButton input{
+    width: 95%;
+    margin-right: 20px;
+    height: 30px;
+    border: 1px solid #cccccc;
+}
+
+.commentArea .inputAndButton .commentButton{
+    background-color: rgb(255, 192, 159);
+    width: 60px;
+    height: 32px;
+    border: 1px solid rgb(255, 192, 159);
+    margin-left: 0;
+    margin-top: 5px;
+    margin-right: 25px;
+    padding-left: 0;
+    float: right;
+    border-radius: 3px;
+}
+
+/******下面的菜单栏************/
+
+.articleBottom{
+    position: relative;
+    color: #808080;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 1px solid #bdc3c7;
+    /*margin-top: 5px;*/
+}
+
+.articleBottom > div{
+    width: 25%;
+    height: 38px;
+    position: relative;
+    /*border-right: 1px solid red;*/
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.articleBottom >div{
+    border-right: 1px solid #bdc3c7;
+    /*border-right: 1px solid red;*/
+}
+.articleBottom div:last-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: none;
+}
+
+
+.heart{
+    position: relative;
+    width: 100px;
+    height:100px;
+    margin: 0;
+    padding: 0;
+    background: url("../image/web_heart_animation_edge.png") no-repeat;
+    /*background-size: contain;*/
+    background-position: 0 0;
+    /*background-position: center;*/
+    cursor: pointer;
+    transition: background-position 1s steps(28);
+    border: none;
+    right: -15%;
+
+    /*transition-duration: 0s;*/
+}
+
+.is-active {
+    transition-duration: 1s;
+    background-position: -2800px 0;
+}
+
+
+.shareIcon, .commentIcon{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+}
+
+
+.scrollContainer{
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    position: fixed;
+    top: auto;
+    right: 25%;
+    border:  1px red solid;
+}
+
+
+/*****************轮播***********************/
+.images{
+    display: flex;
+    align-items: flex-start;
+    /*border: 5px solid red;*/
+    /*transition: transform 0.5s;*/
+    transition: all 0.5s;
+
+    /*测试图片粘连是否和边框有关*/
+    border: none;
+
+
+}
+.images > img{
+    /*vertical-align: top;*/
+    /*float: left;*/
+    /*width: 759.6px;*/
+
+}
+.window{
+    position: relative;     /*add*/
+    /*width: 300px;*/
+    /*height: 100%;*/
+    width: 700px;
+    overflow: hidden;
+    /*测试图片粘连是否和边框有关*/
+    border: none;
+}
+
+.active{
+    background: #FF8200;
+}
+
+#buttons button{
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    border: 0;
+    border-radius: 50%;
+
+    position: relative;
+    top: -40px;
+    left: 45%;
+
+}
+
+.leftArrow{
+    position: absolute;
+    top: 200px;
+    z-index: 2;
+    display: none;
+}
+
+.rightArrow{
+    position: absolute;
+    top: 210px;
+    right: 5px;
+    z-index: 2;
+    display: none;
+}

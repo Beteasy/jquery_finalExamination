@@ -1,0 +1,346 @@
+body{
+    /*background-image: url("../image/banner1.jpg");*/
+    margin: 0;
+}
+
+.pageContainer{
+    /*background-image: url("../image/banner1.jpg");*/
+    /*background-size: cover;*/
+    background-image: linear-gradient(125deg,#5352ed, #ff6348,#70a1ff , #ff4757);
+    background-size: 400%;
+    animation: bganimation 15s infinite;
+}
+
+@keyframes bganimation {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.header{
+    height: 54px;
+}
+
+
+.navbar_nav{
+    width: 300px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.navbar_nav li ul{
+
+    position: absolute;
+    right: 110px;
+}
+
+.navbar_nav li ul a{
+    font-size: 16px;
+}
+
+.topUserHead{
+    position: relative;
+    top: -9px;
+}
+
+
+.topUserHead img{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+.userFunction{
+    /*定位在行内样式*/
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.2);
+}
+
+.userFunction li{
+    width: 100px;
+    position: relative;
+    /*right: -150px;*/
+}
+
+.leftContainer{
+    position: fixed;
+    width: 10%;
+    height: 100%;
+    background-color: rgba(249, 249, 255, 0.1);
+    /*opacity: 0.5;*/
+    /*background-color: ;*/
+    /*background: blue;*/
+    /*border: 1px solid red;*/
+    left: 20%;
+    /*top: 50px;*/
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.leftContainer ul{
+    list-style-type: none;
+}
+
+.leftContainer ul li a{
+    text-decoration: none;
+}
+
+.leftContainer ul li a:link{
+    color: rgb(51, 51, 51);
+}
+
+.leftContainer ul li a:active{
+    color: rgb(51, 51, 51);
+}
+
+.leftContainer ul li a:visited{
+    color: rgb(51, 51, 51);
+}
+
+.centerContainer{
+    position: relative;
+    width: 50%;
+    background-color: rgba(249, 249, 255, 0.05);
+    min-height: 800px;
+    /*border: 1px solid red;*/
+    left: 30%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    display: flex;
+    /*text-align: center;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+}
+
+.articleCenter{
+    display: flex;
+    flex-direction: row;
+}
+
+.userHead{
+    position: relative;
+    width: 10%;
+    /*height: 100%;*/
+    /*border: 1px solid red;*/
+    padding: 10px 0;
+}
+
+.articleDetail{
+    position: relative;
+    width: 90%;
+    /*border: 1px solid red;*/
+    /*padding: 10px 0;*/
+    padding: 20px 0;
+}
+
+.userHead img{
+    position: relative;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+}
+
+.usernameAndButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /*margin-bottom: 1px;*/
+}
+
+.username{
+    margin: 0;
+}
+
+.functionButton{
+    /*z-index: 999;*/
+    position: relative;
+    /*display: flex;*/
+    float: right;
+    flex-direction: column;
+    align-items: center;
+}
+
+.functionButton img{
+    width: 30px;
+    height: 32px;
+    /*border: 1px solid red;*/
+}
+
+.functionButton ul{
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    /*padding: 0;*/
+    right: 20px;
+    width: 70px;
+    /*z-index: 9;*/
+    background-color: white;
+    border: 1px solid #ccc;
+    /*box-shadow: 3px 3px 10px #888888;*/
+    box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.2);
+    /*border: 1px solid red;*/
+    display: none;
+    /*text-align: center;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+}
+
+.functionButton ul li{
+    position: relative;
+    /*float: left;*/
+    left: -20%;
+    align-items: center;
+    justify-content: center;
+    /*float: left;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+}
+
+.functionButton ul li a{
+    /*display: block;*/
+    position: relative;
+    float: left;
+    /*left: -200px;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+}
+
+
+.publishDate{
+    /*margin-bottom: 5px;*/
+}
+
+.article{
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.articleContent{
+    margin-bottom: 5px;
+}
+
+.articleContent p{
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+
+.articleBottom{
+    color: #808080;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 1px solid #bdc3c7;
+}
+
+.articleBottom > div{
+    width: 25%;
+    height: 38px;
+    position: relative;
+    /*border-right: 1px solid red;*/
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.articleBottom >div{
+    border-right: 1px solid #bdc3c7;
+    /*border-right: 1px solid red;*/
+}
+.articleBottom div:last-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: none;
+}
+
+.article{
+    background-color: white;
+}
+
+
+
+.heart{
+    position: relative;
+    width: 100px;
+    height:100px;
+    margin: 0;
+    padding: 0;
+    background: url("../image/web_heart_animation_edge.png") no-repeat;
+    /*background-size: contain;*/
+    background-position: 0 0;
+    /*background-position: center;*/
+    cursor: pointer;
+    transition: background-position 1s steps(28);
+    border: none;
+    right: -15%;
+
+    /*transition-duration: 0s;*/
+}
+
+/*.priseBig{*/
+    /*position: fixed;*/
+    /*left: 50%;*/
+    /*top: 50%;*/
+    /*transform: translate(-50%,-50%);*/
+    /*width: 250px;*/
+    /*height:300px;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*background: url("../image/web_heart_animation_edge_8700x300.png") no-repeat;*/
+    /*!*opacity: 0.1;*!*/
+    /*!*background-size: contain;*!*/
+    /*background-position: 0 0;*/
+    /*!*background-position: center;*!*/
+    /*cursor: pointer;*/
+    /*transition: background-position 1s steps(28);*/
+    /*border: none;*/
+    /*right: -15%;*/
+/*}*/
+
+/*.is-activeBig{*/
+    /*transition-duration: 1s;*/
+    /*background-position: -8700px 0;*/
+/*}*/
+
+.is-active {
+    transition-duration: 1s;
+    background-position: -2800px 0;
+}
+
+
+.shareIcon, .commentIcon{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+
+/*评论*/
+.commentArea{
+    top: 0;
+}
+
+.commentArea .userHead{
+    width: 40px;
+    height: 40px;
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>好视不断</title>
+    <link rel="stylesheet" href="css/video.css">
+    <!--<link rel="stylesheet" href="css/news.css">-->
+</head>
+<body>
+<header class="header">
+    <div class="headerContainer ">
+
+        <div class="name">JOHN'S BLOG</div>
+
+        <div class="searchContainer">
+            <form class="search-box" action="" method="post">
+                <input type="text" class="input">
+                <button type="button" class="button" name="button"></button>
+            </form>
+        </div>
+
+        <div >
+            <ul class="navbar_nav" >
+                <li class="active">
+                    <a href="index.html">首页</a>
+                </li>
+                <li class="active">
+                    <a href="#">发现精彩</a>
+                    <ul>
+                        <li><a href="news_bk.html">热门新闻</a></li>
+                        <li><a href="video_bk.html">大片预告</a></li>
+                        <!--<li><a href=""></a></li>-->
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="login.html">登录</a>
+                </li>
+                <li class="active">
+                    <a href="sign-up.html">注册</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="mainContainer">
+    <div class="leftContainer">
+        <ul>
+            <li ><img src="image/food2.png"><a href="">美食</a></li>
+            <li><img src="image/game2.png"><a href="">游戏</a></li>
+            <li><img src="image/movie2.png"><a href="">影视</a></li>
+            <li><img src="image/entertainment2.png"><a href="">娱乐</a></li>
+            <li><img src="image/funny2.png"><a href="">幽默搞笑</a></li>
+            <li><img src="image/vlog2.png"><a href="">VLOG</a></li>
+        </ul>
+    </div>
+    <div class="rightContainer">
+        <div class="mainVideoContainer">
+            <!--顶部的视频-->
+            <div class="topVideoContainer">
+                <div class="videoTitle">五花肉炒香干</div>
+                <div class="videoContent">
+                    <video id="topVideo" src="videos/xg.mp4" controls="controls" autoplay="autoplay" preload="auto" ></video>
+                </div>
+
+                <div class="danMu">
+                    <input type="text" placeholder="说两句呗~" class="DMText">
+                    <button type="button" class="DMButton">发送</button>
+                    <!--<button class="openAndClose" status="open">开关弹幕</button>-->
+                    <div class="right">
+                        <div isopen="true" class="btnn"></div>
+                    </div>
+                </div>
+            </div>
+
+            <h3>特推精品</h3>
+            <div class="videoItems ">
+                <!--每个视频模块-->
+                <div class="special" videoCover="videos/ssbd.jpg" videoPath="videos/arxh.mp4">
+                    <div class="videoCover">
+                        <img src="videos/ssbd.jpg">
+                        <img src="image/play.png" class="playButton">
+                    </div>
+                    <div class="videoInfo" >
+                        <p class="description">【易消化·490大卡】棋子寿司便当</p>
+                        <p class="author">咕噜健身吃喝日记</p>
+                    </div>
+                </div>
+                <div class="special" videoCover="videos/yyms.jpg" videoPath="videos/yyms.mp4">
+                    <div class="videoCover">
+                        <img src="videos/yyms.jpg">
+                        <img src="image/play.png" class="playButton">
+                    </div>
+                    <div class="videoInfo">
+                        <p class="description">孩子就馋它，补钙又解馋，软糯酥脆紫薯千层饼，不用揉面...</p>
+                        <p class="author">一叶美食叶子Ivy</p>
+                    </div>
+                </div>
+
+                <div class="special" videoCover="videos/bread.jpg" videoPath="videos/bread.mp4">
+                    <div class="videoCover">
+                        <img src="videos/bread.jpg">
+                        <img src="image/play.png" class="playButton">
+                    </div>
+                    <div class="videoInfo">
+                        <p class="description">美到想舔屏的果冻蛋糕卷，看一眼就会沦陷~</p>
+                        <p class="author">Tastemade烘焙</p>
+                    </div>
+                </div>
+
+                <div class="special" videoCover="videos/arxh.jpg" videoPath="videos/arxh.mp4">
+                    <div class="videoCover">
+                        <img src="videos/arxh.jpg">
+                        <img src="image/play.png" class="playButton">
+                    </div>
+                    <div class="videoInfo">
+                        <p class="description">一碗黯然销魂饭，献给假期的最后一天</p>
+                        <p class="author">爱做饭的芋头SAMA</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--下面的视频-->
+            <h3>精品推荐</h3>
+            <div class="videoItems">
+                <!--每个视频模块-->
+                <div class="videoItem" videoCover="videos/yyms.jpg" videoPath="videos/yyms.mp4">
+                    <div class="videoCover">
+                        <img src="videos/yyms.jpg">
+                        <img src="image/play.png" class="playButton">
+                    </div>
+                    <div class="videoInfo">
+                        <p class="description">孩子就馋它，补钙又解馋，软糯酥脆紫薯千层饼，不用揉面...</p>
+                        <p class="author">一叶美食叶子Ivy</p>
+                    </div>
+                </div>
+
+                <div class="videoItem" videoCover="videos/bread.jpg" videoPath="videos/bread.mp4">
+                    <div class="videoCover">
+                        <img src="videos/bread.jpg">
+                        <img src="image/play.png" class="playButton">
+                    </div>
+                    <div class="videoInfo">
+                        <p class="description">美到想舔屏的果冻蛋糕卷，看一眼就会沦陷~</p>
+                        <p class="author">Tastemade烘焙</p>
+                    </div>
+                </div>
+
+                <div class="videoItem" videoCover="videos/arxh.jpg" videoPath="videos/arxh.mp4">
+                    <div class="videoCover">
+                        <img src="videos/arxh.jpg">
+                        <img src="image/play.png" class="playButton">
+                    </div>
+                    <div class="videoInfo">
+                        <p class="description">一碗黯然销魂饭，献给假期的最后一天</p>
+                        <p class="author">爱做饭的芋头SAMA</p>
+                    </div>
+                </div>
+
+                <div class="videoItem" videoCover="videos/cc.jpg" videoPath="videos/arxh.mp4">
+                    <div class="videoCover">
+                        <img src="videos/cc.jpg">
+                        <img src="image/play.png" class="playButton">
+                    </div>
+                    <div class="videoInfo" >
+                        <p class="description">Cc炫彩的早餐时光</p>
+                        <p class="author">Cc炫彩早餐</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>热门推荐</h3>
+            <div class="videoItems">
+
+                <!--每个视频模块-->
+                <div class="videoItem" videoCover="videos/zywz.jpg" videoPath="videos/yyms.mp4">
+                    <div class="videoCover">
+                        <img src="videos/zywz.jpg">
+                        <img src="image/play.png" class="playButton">
+                    </div>
+                    <div class="videoInfo">
+                        <p class="description">章鱼小丸子 | 球球主题，第一天 | 喵の早餐vlog 237</p>
+                        <p class="author">流浪的喵喵小姐</p>
+                    </div>
+                </div>
+
+                <div class="videoItem" videoCover="videos/ydjy.jpg" videoPath="videos/bread.mp4">
+                    <div class="videoCover">
+                        <img src="videos/ydjy.jpg">
+                        <img src="image/play.png" class="playButton">
+                    </div>
+                    <div class="videoInfo">
+                        <p class="description">元旦家宴，做一道寓意红火的辣子鸡，麻辣鲜香，好吃又下饭</p>
+                        <p class="author">聪聪食光00</p>
+                    </div>
+                </div>
+
+                <div class="videoItem" videoCover="videos/nrgf.jpg" videoPath="videos/arxh.mp4">
+                    <div class="videoCover">
+                        <img src="videos/nrgf.jpg">
+                        <img src="image/play.png" class="playButton">
+                    </div>
+                    <div class="videoInfo">
+                        <p class="description">料理vlog〜牛肉蓋飯〜</p>
+                        <p class="author">yunaty0120</p>
+                    </div>
+                </div>
+
+                <div class="videoItem" videoCover="videos/ssbd.jpg" videoPath="videos/arxh.mp4">
+                    <div class="videoCover">
+                        <img src="videos/ssbd.jpg">
+                        <img src="image/play.png" class="playButton">
+                    </div>
+                    <div class="videoInfo" >
+                        <p class="description">【易消化·490大卡】棋子寿司便当</p>
+                        <p class="author">咕噜健身吃喝日记</p>
+                    </div>
+                </div>
+
+            </div>
+            <!--弹出视频-->
+            <div class="outVideo"></div>
+
+
+    </div>
+</div>
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/myindex.js"></script>
+    <script src="js/news.js"></script>
+</body>
+</html>

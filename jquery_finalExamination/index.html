@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>热门新闻</title>
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/scroll.css">
+
+</head>
+<body>
+
+<header class="header">
+    <div class="headerContainer ">
+        <div class="name">JOHN'S BLOG</div>
+        <div class="searchContainer">
+            <form class="search-box" action="" method="post">
+                <input type="text" class="input">
+                <button type="button" class="button" name="button"></button>
+            </form>
+        </div>
+
+        <!--<div class="middle">-->
+            <!--<form action="index_origin.html" class="search-box" method="post">-->
+                <!--<input type="text" class="input" name="" valur="">-->
+                <!--<button type="button" class="btn" name="button"></button>-->
+            <!--</form>-->
+        <!--</div>-->
+        <!--//class="fr nav"-->
+        <div class="rightTopNav">
+            <ul class="navbar_nav" >
+                <li class="index">
+                    <a href="index.html">首页</a>
+                </li>
+                <li class="discover">
+                    <a href="#">发现精彩</a>
+                    <ul>
+                        <li><a href="news_bk.html">热门新闻</a></li>
+                        <li><a href="video.html">好视不断</a></li>
+                        <!--<li><a href=""></a></li>-->
+                    </ul>
+                </li>
+                <li class="login">
+                    <a href="login.html">登录</a>
+                </li>
+                <li class="sign-up">
+                    <a href="sign-up.html">注册</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+    <div class="pageContainer">
+
+        <div class="leftContent"></div>
+
+        <div class="centerContent">
+            <!--轮播-->
+            <div class="window">
+                <div class="leftArrow">
+                    <img src="image/arrow_left.png" width="64px">
+                </div>
+                <div class="images" id="images">
+                    <img src="image/building.jpg" width="700px" height="450px"/>
+                    <img src="image/dog.jpg" width="700px" height="450px"/>
+                    <img src="image/lighthouse.jpg" width="700px" height="450px"/>
+                </div>
+                <div class="rightArrow">
+                    <img src="image/arrow_right.png" width="64px">
+                </div>
+                <span id="buttons">
+                <button id="p1" class="active">1</button>
+                <button id="p2">2</button>
+                <button id="p3">3</button>
+            </span>
+            </div>
+
+
+
+            <div class="item">
+                <div class="itemCenter">
+                    <a class="tooltip" href="https://r.sinaimg.cn/large/tc/image_thepaper_cn/cb1376ead38c6d02376607f1d94aaa17.jpeg">
+                        <img src="https://r.sinaimg.cn/large/tc/image_thepaper_cn/cb1376ead38c6d02376607f1d94aaa17.jpeg">
+                    </a>
+                    <div class="text_block">
+                        <!--<p class="title">标题</p><br>-->
+                        <h4>历史性时刻！北斗三号全球系统核心星座部署完成</h4>
+                        <p class="preview"> 12月16日，由航天科技集团有限公司所属中国运载火箭技术研究院（以下简称火箭院）抓总研制的长征三号乙运载火箭以“一箭双星”的方式……</p>
+                    </div>
+                </div>
+                <div class="articleBottom">
+                    <div class="share">
+                        <div class="shareIcon">
+                            <img src="image/share.png">
+                        </div>
+                        <span>分享</span>
+                    </div>
+                    <div class="comment">
+                        <div class="commentIcon">
+                            <img src="image/comment.png">
+                        </div>
+                        <span>评论</span>
+                    </div>
+                    <div class="prise">
+                        <div class="heart"></div>
+                        <span>赞一个</span>
+                    </div>
+                </div>
+            </div>
+            <div class="commentArea" status="hidden">
+                <div>
+                    <img src="image/userHead.jpeg" class="userHead">
+                    <div class="inputAndButton">
+                        <input class="commentInput" type="text">
+                        <button class="commentButton">评论</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--2-->
+            <div class="item">
+                <div class="itemCenter">
+                    <a class="tooltip" href="https://tc.sinaimg.cn/maxwidth.2048/tc.service.weibo.com/rmfyb_chinacourt_org/ba05155a2061786ca2ba7db041293eb3.jpg">
+                        <img src="https://tc.sinaimg.cn/maxwidth.2048/tc.service.weibo.com/rmfyb_chinacourt_org/ba05155a2061786ca2ba7db041293eb3.jpg">
+                    </a>
+                    <div class="text_block">
+                        <!--<p class="title">标题</p><br>-->
+                        <h4>追踪大法官庭审背后的故事</h4>
+                        <p class="preview"> 朗乡镇位于小兴安岭南麓，距省城哈尔滨300多公里。2019年12月8日，一场突降的大雪覆盖了公路和市区，街巷间罕有人迹……</p>
+                    </div>
+                </div>
+                <div class="articleBottom">
+                    <div class="share">
+                        <div class="shareIcon">
+                            <img src="image/share.png">
+                        </div>
+                        <span>分享</span>
+                    </div>
+                    <div class="comment">
+                        <div class="commentIcon">
+                            <img src="image/comment.png">
+                        </div>
+                        <span>评论</span>
+                    </div>
+                    <div class="prise">
+                        <div class="heart"></div>
+                        <span>赞一个</span>
+                    </div>
+                </div>
+            </div>
+            <div class="commentArea" status="hidden">
+                <div>
+                    <img src="image/userHead.jpeg" class="userHead">
+                    <div class="inputAndButton">
+                        <input class="commentInput" type="text">
+                        <button class="commentButton" id="commentButton">评论</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--3-->
+            <div class="item">
+                <div class="itemCenter">
+                    <a class="tooltip" href="https://tc.sinaimg.cn/images/tc2.service.jpg">
+                        <img src="https://tc.sinaimg.cn/images/tc2.service.jpg">
+                    </a>
+                    <div class="text_block">
+                        <!--<p class="title">标题</p><br>-->
+                        <h4>省首批乡村振兴示范名单公示临沂1县6镇多村入围</h4>
+                        <p class="preview"> 17日，山东省发展改革委对拟认定首批山东省乡村振兴示范县(市、区)8个、示范乡(镇、街)90个、示范村(社区)900个名单进行公示……</p>
+                    </div>
+                </div>
+                <div class="articleBottom">
+                    <div class="share">
+                        <div class="shareIcon">
+                            <img src="image/share.png">
+                        </div>
+                        <span>分享</span>
+                    </div>
+                    <div class="comment">
+                        <div class="commentIcon">
+                            <img src="image/comment.png">
+                        </div>
+                        <span>评论</span>
+                    </div>
+                    <div class="prise">
+                        <div class="heart"></div>
+                        <span>赞一个</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--4-->
+            <div class="item">
+                <div class="itemCenter">
+                    <a class="tooltip" href="https://r.sinaimg.cn/large/tc/www_cas_cn/0b3f83bb441c2c2e7e66f4f1a976cc79.png">
+                        <img src="https://r.sinaimg.cn/large/tc/www_cas_cn/0b3f83bb441c2c2e7e66f4f1a976cc79.png">
+                    </a>
+                    <div class="text_block">
+                        <!--<p class="title">标题</p><br>-->
+                        <h4>深圳先进院等在2D-2D二维超薄异质结研究方面取得进展</h4>
+                        <p class="preview"> 近日，中国科学院深圳先进技术研究院医工所纳米调控与生物力学研究中心在2D-2D二维超薄异质结研究方面获得新进展……</p>
+                    </div>
+                </div>
+                <div class="articleBottom">
+                    <div class="share">
+                        <div class="shareIcon">
+                            <img src="image/share.png">
+                        </div>
+                        <span>分享</span>
+                    </div>
+                    <div class="comment">
+                        <div class="commentIcon">
+                            <img src="image/comment.png">
+                        </div>
+                        <span>评论</span>
+                    </div>
+                    <div class="prise">
+                        <div class="heart"></div>
+                        <span>赞一个</span>
+                    </div>
+                </div>
+            </div>
+
+           <!--5-->
+            <div class="item">
+                <div class="itemCenter">
+                    <a class="tooltip" href="https://tc.sinaimg.cn/maxwidth.2048/tc.service.weibo.com/www_cyol_com/927fb7d1ec368e4ddf6d7430e5e0090e.jpg">
+                        <img src="https://tc.sinaimg.cn/maxwidth.2048/tc.service.weibo.com/www_cyol_com/927fb7d1ec368e4ddf6d7430e5e0090e.jpg">
+                    </a>
+                    <div class="text_block">
+                        <!--<p class="title">标题</p><br>-->
+                        <h4>教师减负的关键是保障教学自主权</h4>
+                        <p class="preview"> 解决教师减负问题的前提是把青少年的健康成长发展放到重要位置，尊重教师工作的专业性特征……</p>
+                    </div>
+                </div>
+                <div class="articleBottom">
+                    <div class="share">
+                        <div class="shareIcon">
+                            <img src="image/share.png">
+                        </div>
+                        <span>分享</span>
+                    </div>
+                    <div class="comment">
+                        <div class="commentIcon">
+                            <img src="image/comment.png">
+                        </div>
+                        <span>评论</span>
+                    </div>
+                    <div class="prise">
+                        <div class="heart"></div>
+                        <span>赞一个</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <a class="tooltip" href="https://wx1.sinaimg.cn/large/5d098bccly1ga1rpb0kdzj20gd097dpw.jpg">
+                    <img src="https://wx1.sinaimg.cn/large/5d098bccly1ga1rpb0kdzj20gd097dpw.jpg">
+                </a>
+                <div class="text_block">
+                    <!--<p class="title">标题</p><br>-->
+                    <h4>上海再度拥抱互联网</h4>
+                    <p class="preview">11月10日晚，FPX战队以3:0的比分一举在巴黎摘取英雄联盟S9的总冠军</p>
+                </div>
+            </div>
+            <div class="item">
+                <a class="tooltip" href="https://tc.sinaimg.cn/maxwidth.2048/tc.service.weibo.com/www_yangtse_com/2245b9bc3a9fa067e8d64eb09000b047.jpg">
+                    <img src="https://tc.sinaimg.cn/maxwidth.2048/tc.service.weibo.com/www_yangtse_com/2245b9bc3a9fa067e8d64eb09000b047.jpg">
+                </a>
+                <div class="text_block">
+                    <!--<p class="title">标题</p><br>-->
+                    <h4>徐州“融创都会星宸”涉嫌无证预售</h4>
+                    <p class="preview">近日，扬子晚报96096新闻热线接到多位市民的投诉，称徐州市楼盘融创都会星宸在未领取预售许可证情况下，就已经开始“意向落位”</p>
+                </div>
+            </div>
+        </div>
+
+        <!--<div id="scroll_top" class="scrollContainer">-->
+            <!--<img src="image/scrollTop.jpg">-->
+        <!--</div>-->
+        <div id="scroll_top">
+            <img src="image/scrollTop.jpg" style="width: 100%; position: relative; height: 100%">
+        </div>
+        <div class="rightContent">
+
+        </div>
+
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/news.js"></script>
+    <script src="js/myindex.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+
+</html>

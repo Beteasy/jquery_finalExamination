@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <!-- Website Title -->
+    <title>注册</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="css/bootstrap_su.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+    <link href="css/sign_up.css" rel="stylesheet">
+	
+
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+    
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="index.html">首页 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="news_bk.html">发现精彩 <span class="sr-only">(current)</span></a>
+                        <ul>
+                            <li><a href="news_bk.html">热门新闻</a></li>
+                            <li><a href="video.html">好视不断</a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="login.html">登录 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="sign-up.html">注册 <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+    <form action="javascript:void(0);" class="signUp-form">
+        <h1>注册</h1>
+        <div class="txtb">
+            <input type="text" id="username">
+            <span data-placeholder="Username"></span>
+            <div id="usernameE"></div>
+        </div>
+
+        <div class="txtb">
+            <input type="text" id="email" >
+            <span data-placeholder="Email"></span>
+            <div id="emailE"></div>
+        </div>
+
+        <div class="txtb">
+            <input type="password" id="password">
+            <span data-placeholder="Password"></span>
+            <div id="passwordE"></div>
+        </div>
+
+        <div class="txtb">
+            <input type="password" id="cpassword">
+            <span data-placeholder="Password"></span>
+            <div id="cpasswordE"></div>
+        </div>
+
+        <input type="submit" class="sigbtn" value="注册">
+
+        <div class="form-message">
+            <div id="msgSubmit"></div>
+        </div>
+    </form>
+    <!-- Header -->
+    <!--<header id="header" class="ex-2-header">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="col-lg-12">-->
+                    <!--<h1>注册</h1>-->
+                    <!--&lt;!&ndash; Sign Up Form &ndash;&gt;-->
+                    <!--<div class="form-container">-->
+                        <!--<form id="signUpForm" data-toggle="validator" data-focus="false" method="post" >-->
+                            <!--&lt;!&ndash;去掉了所有的required&ndash;&gt;-->
+
+                            <!--<div class="form-group">-->
+                                <!--<input type="email" class="form-control-input" id="semail" >-->
+                                <!--<label class="label-control" for="semail">Email</label>-->
+                                <!--<div class="help-block with-errors" id="semailE"></div>-->
+                            <!--</div>-->
+
+                            <!--<div class="form-group">-->
+                                <!--<input type="text" class="form-control-input" id="sname" >-->
+                                <!--<label class="label-control" for="sname">Name</label>-->
+                                <!--<div class="help-block with-errors" id="snameE"></div>-->
+                            <!--</div>-->
+
+                            <!--<div class="form-group">-->
+                                <!--<input type="password" class="form-control-input" id="spassword" >-->
+                                <!--<label class="label-control" for="spassword">Password</label>-->
+                                <!--<div class="help-block with-errors" id="spasswordE"></div>-->
+                            <!--</div>-->
+
+                            <!--<div class="form-group">-->
+                                <!--<input type="password" class="form-control-input" id="cpassword" >-->
+                                <!--<label class="label-control" for="cpassword">Password</label>-->
+                                <!--<div class="help-block with-errors" id="cpasswordE"></div>-->
+                            <!--</div>-->
+
+                            <!--<div class="form-group">-->
+                                <!--<button type="submit" class="form-control-submit-button">注册</button>-->
+                            <!--</div>-->
+
+                            <!--<div class="form-message">-->
+                                <!--<div id="smsgSubmit" class="h3 text-center hidden"></div>-->
+                            <!--</div>-->
+
+                        <!--</form>-->
+                    <!--</div> &lt;!&ndash; end of form container &ndash;&gt;-->
+                    <!--&lt;!&ndash; end of sign up form &ndash;&gt;-->
+
+                <!--</div> &lt;!&ndash; end of col &ndash;&gt;-->
+            <!--</div> &lt;!&ndash; end of row &ndash;&gt;-->
+        <!--</div> &lt;!&ndash; end of container &ndash;&gt;-->
+    <!--</header> &lt;!&ndash; end of ex-header &ndash;&gt;-->
+    <!--&lt;!&ndash; end of header &ndash;&gt;-->
+
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <!--<script src="js/popper.min.js"></script> &lt;!&ndash; Popper tooltip library for Bootstrap &ndash;&gt;-->
+    <!--<script src="js/bootstrap.min.js"></script> &lt;!&ndash; Bootstrap framework &ndash;&gt;-->
+    <!--<script src="js/jquery.easing.min.js"></script> &lt;!&ndash; jQuery Easing for smooth scrolling between anchors &ndash;&gt;-->
+    <!--<script src="js/swiper.min.js"></script> &lt;!&ndash; Swiper for image and text sliders &ndash;&gt;-->
+    <!--<script src="js/jquery.magnific-popup.js"></script> &lt;!&ndash; Magnific Popup for lightboxes &ndash;&gt;-->
+    <!--<script src="js/validator.min.js"></script> &lt;!&ndash; Validator.js - Bootstrap plugin that validates forms &ndash;&gt;-->
+    <!--<script src="js/scripts.js"></script> &lt;!&ndash; Custom scripts &ndash;&gt;-->
+    <script src="js/sign_up.js"></script>
+</body>
+</html>
